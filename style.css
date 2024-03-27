@@ -1,0 +1,360 @@
+* {
+    font-family: "Patrick Hand SC", cursive;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: white;
+    --text-black: black;
+    --mini-gray-text: grey;
+    --bg-color: #f7f7f7;
+    --blue: #285aeb;
+    --gradient: linear-gradient(104deg, rgb(73, 157, 253) 0%, rgb(0, 56, 160) 100%);
+    --pink-gradient: linear-gradient(104deg, rgb(235, 134, 255) 0%,rgb(116, 11, 126) 100%);
+}
+
+body {
+    color: var(--text-black);
+    background: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    font-family: "Truculenta", sans-serif;
+    font-weight: 500;
+    font-size: 3.4rem;
+    background: rgb(73, 157, 253);
+    background: var(--gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background: var(--white);
+    border-bottom: 1px solid hsla(0, 0%,0%,0.1);
+}
+
+.container {
+    max-width: 660px;
+    margin: auto;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.nav-icons span {
+    font-size: 2.9rem;
+    color: var(--text-black);
+}
+.nav-icons span:hover {
+    background: rgb(73, 157, 253);
+    background: var(--gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.9s all linear;
+}
+
+.nav-img {
+    width: 52px;
+    border-radius: 50%;
+    height: 52px;
+    object-fit: cover;
+    object-position: center;
+
+
+}
+
+.camera span {
+    font-size: 3.4rem;
+    color: var(--text-black);
+    display: none;
+
+}
+
+section {
+    padding: 4rem 0;
+    margin-top: 4rem !important;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.post-container {
+    max-width: 1050px;
+    width: 100%;
+
+}
+.post-box {
+    width: 100%;
+    background: var(--white);
+    border: 1px solid hsla(0,0%,0%,0.1);
+    margin-bottom: 2rem;
+
+}
+.post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    
+}
+
+.post-profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+.post-profile img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.description {
+    font-size: 1.3rem;
+    font-weight: 350;
+}
+.info-icon {
+    cursor: pointer;
+}
+
+.post-img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.all-action-icons {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 15px;
+    color: var(--text-black);
+}
+
+#bookmark, #thumbup, #thumbdown, #comment, #share {
+    margin: 0 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#bookmark:hover, #thumbup:hover, #thumbdown:hover, #comment:hover, #share:hover {
+    background: rgb(73, 157, 253);
+    background: var(--gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.9s all linear;
+}
+
+.reactions {
+    color: var(--mini-gray-text);
+    margin: 10px 35px;
+}
+.reactions h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.reactions-and-comments span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comments {
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 0.5rem 2rem;
+    display: block;
+}
+
+.reactions-and-comments .view-more {
+    color: var(--mini-gray-text);
+    justify-content: center;
+    font-weight: 400;
+    margin: 1rem 0;
+    font-size: 1.2rem; 
+}
+
+.comments a {
+    background: rgb(73, 157, 253);
+    background: var(--gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.9s all linear;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.suggest-container {
+
+    max-width: 300px;
+    width: 100%;
+
+}
+
+.suggest-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.suggest-header h2 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    color: var(--mini-gray-text);
+}
+
+.suggest-header a {
+    font-size: 1.3rem;
+    font-weight: 200;
+    background: rgb(73, 157, 253);
+    background: var(--gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    transition: 0.9s all linear;
+}
+
+.profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}
+
+.side-profile {
+    display: flex;
+    align-items: center;
+    column-gap: 0.8rem;
+}
+
+.side-profile img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: 400;
+    background: rgb(235, 134, 255);
+    background: var(--pink-gradient);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+}
+
+.username-popular .popular {
+    font-size: 1.1rem;
+}
+
+.follow-btn {
+    font-size: 1.4rem;
+    background: var(--text-black);
+    border-radius: 5px;
+    color: white;
+    padding: 5px 15px;
+}
+
+
+@media (max-width: 875px) {
+    .nav {
+        padding: 10px 0;
+        width: 95%;
+    }
+
+    .suggest-container {
+        display: none;
+    }
+
+    .post-container {
+        margin: auto;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+    .post-box {
+        border: none;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .post-img {
+        height: 450px;
+    }
+
+    section {
+        margin-top: 1rem !important;
+    }
+}
+ 
+@media (max-width: 380px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-icons span {
+        font-size: 1.5rem;
+    }
+
+
+}
